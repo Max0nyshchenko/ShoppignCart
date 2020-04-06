@@ -1,0 +1,132 @@
+{
+    "items": [
+        {
+            "sys": {
+                "id": "1"
+            },
+            "fields": {
+                "title": "Queen bed",
+                "price": 143.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/product1.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "2"
+            },
+            "fields": {
+                "title": "King Panel bed",
+                "price": 112.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/product2.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "3"
+            },
+            "fields": {
+                "title": "Single Panel bed",
+                "price": 129.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/product3.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "4"
+            },
+            "fields": {
+                "title": "Twin Panel bed",
+                "price": 222.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/product4.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "5"
+            },
+            "fields": {
+                "title": "John Doe's bad",
+                "price": 808.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/product5.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "6"
+            },
+            "fields": {
+                "title": "Dr.Dre bad",
+                "price": 319.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/product6.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "7"
+            },
+            "fields": {
+                "title": "Fairy bad",
+                "price": 450.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/product7.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "8"
+            },
+            "fields": {
+                "title": "Ordinary bad",
+                "price": 303.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/product8.jpg"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

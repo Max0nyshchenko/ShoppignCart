@@ -131,6 +131,7 @@ body {
     max-width: 1170px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* grid-template-rows: repeat(auto-fit, minmax(260px, 1fr)); */
     column-gap: 1.5rem;
     row-gap: 2rem;
 }
@@ -170,7 +171,9 @@ body {
 .product-img {
     display: block;
     width: 100%;
-    min-height: 12rem;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
     transition: var(--mainTransition);
 }
 
@@ -179,7 +182,6 @@ body {
 }
 
 .product h3 {
-    text-transform: capitalize;
     font-size: 1.1rem;
     margin-top: 1rem;
     letter-spacing: var(--mainSpacing);
