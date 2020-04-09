@@ -120,7 +120,7 @@ body {
 /* Products */
 .products {
     padding: 4rem;
-    background: linear-gradient(rgb(236, 236, 236), rgb(171, 210, 218));
+    /* background: linear-gradient(rgb(236, 236, 236), rgb(171, 210, 218)); */
 }
 
 .section-title h2 {
@@ -216,7 +216,7 @@ body {
     background-color: #fff;
     /* border: 1px solid black; */
     /* border-radius: 10px; */
-    box-shadow: 0 5px 10px  rgb(151, 151, 151);
+    /* box-shadow: 0 5px 10px  rgb(151, 151, 151); */
     overflow: hidden;
 }
 
