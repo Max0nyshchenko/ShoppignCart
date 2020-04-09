@@ -10,7 +10,7 @@ const client = contentful.createClient({
 // vars
 
 const cartBtn = document.querySelector('.cart-btn');
-const closeCartBtn = document.querySelector('.close-cart');
+const closeCartBtn = document.querySelector('.fa-window-close');
 const clearCartBtn = document.querySelector('.clear-cart');
 const cartDOM = document.querySelector('.cart');
 const cartOverlay = document.querySelector('.cart-overlay');
@@ -18,6 +18,10 @@ const cartItems = document.querySelector('.cart-items');
 const cartTotal = document.querySelector('.cart-total');
 const cartContent = document.querySelector('.cart-content');
 const productsDOM = document.querySelector('.products-center');
+const menuOverlay = document.querySelector('.menu-overlay');
+const burger = document.querySelector('.fa-bars');
+const menu = document.querySelector('.menu');
+const menuCloseBtn = document.getElementById('menuCloseBtn');
 
 // cart
 let cart = [];
@@ -97,8 +101,6 @@ class UI {
                     this.setCartValues(cart);
                     // display cart item
                     this.addCartItem(cartItem);
-                    // show the cart
-                    this.showCart();
                 })
             
         })
@@ -141,6 +143,12 @@ class UI {
         this.populateCart(cart);
         cartBtn.addEventListener('click', this.showCart);
         closeCartBtn.addEventListener('click', this.hideCart);
+        burger.addEventListener('click', this.showMenu);
+        menuCloseBtn.addEventListener('click', this.hideMenu);
+    }
+    showMenu(){
+        menuOverlay.classList.add('transparentBcg');
+        menu.classList.add("showMenu");
     }
     populateCart(cart) {
         cart.forEach(item => this.addCartItem(item));
@@ -148,6 +156,10 @@ class UI {
     hideCart() {
         cartOverlay.classList.remove('transparentBcg');
         cartDOM.classList.remove('showCart');
+    }
+    hideMenu() {
+        menuOverlay.classList.remove('transparentBcg');
+        menu.classList.remove('showMenu');
     }
     cartLogic() {
         clearCartBtn.addEventListener('click', () => {
@@ -192,7 +204,7 @@ class UI {
             cartContent.removeChild(cartContent.children[0]);
         }
         this.hideCart();
-    }
+    }    
     removeItem(id) {
         cart = cart.filter(item => item.id !== id);
         this.setCartValues(cart);
@@ -243,4 +255,19 @@ document.addEventListener('DOMContentLoaded', () => {
         ui.getBagButtons();
         ui.cartLogic();
     })
+})
+
+
+cartOverlay.addEventListener('click', (e) => {
+    if(e.target == cartOverlay){
+        cartOverlay.classList.remove('transparentBcg');
+        cartDOM.classList.remove('showCart');
+    }
+})
+
+menuOverlay.addEventListener('click', (e)=>{
+    if(e.target == menuOverlay){
+        menuOverlay.classList.remove('transparentBcg');
+        menu.classList.remove('showMenu');
+    }
 })
