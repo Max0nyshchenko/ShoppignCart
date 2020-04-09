@@ -56,6 +56,11 @@ body {
     cursor: pointer;
 }
 
+.fa-bars:hover {
+    color: var(--mainWhite);
+    transition: var(--mainTransition);
+}
+
 .cart-items {
     position: absolute;
     top: -8px;
@@ -115,6 +120,7 @@ body {
 /* Products */
 .products {
     padding: 4rem;
+    background: linear-gradient(rgb(236, 236, 236), rgb(180, 180, 180));
 }
 
 .section-title h2 {
@@ -164,6 +170,26 @@ body {
     margin-right: 0.5rem;
 }
 
+.fa-shopping-cart:hover {
+    color: var(--mainWhite);
+    transition: var(--mainTransition);
+}
+
+.fa-window-close {
+    align-self: center;
+    justify-self: center;
+}
+
+.fa-window-close:hover {
+    color: grey;
+    transition: var(--mainTransition);
+}
+
+.fa-window-close:active {
+        font-size: 25px;
+        transition: none;
+}
+
 .img-container:hover .bag-btn {
     transform: translateX(0);
 }
@@ -176,9 +202,22 @@ body {
     object-position: center;
     transition: var(--mainTransition);
 }
+.img-container {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
 
 .img-container:hover .product-img {
     opacity: 0.5;
+}
+
+.product {
+    background-color: #fff;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 0 5px 10px  rgb(151, 151, 151);
+    overflow: hidden;
 }
 
 .product h3 {
@@ -190,6 +229,7 @@ body {
 
 .product h4 {
     margin-top: 0.7rem;
+    padding-bottom: 10px;
     letter-spacing: var(--mainSpacing);
     color: var(--primaryColor);
     text-align: center;
@@ -240,6 +280,10 @@ body {
 .close-cart {
     font-size: 1.7rem;
     cursor: pointer;
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 40px;
+    justify-content: start;
 }
 
 .cart h2 {
@@ -283,12 +327,27 @@ body {
     cursor: pointer;
 }
 
+.remove-item:hover {
+    color: var(--mainBlack);
+}
+
 .fa-chevron-circle-up,
 .fa-chevron-circle-down {
     color: var(--primaryColor);
     cursor: pointer;
+    transition: var(--mainTransition);
 }
 
+.fa-chevron-circle-up:hover,
+.fa-chevron-circle-down:hover {
+    color: rgb(255, 174, 121);
+}
+
+.fa-chevron-circle-up:active,
+.fa-chevron-circle-down:active {
+    font-size: 15px;
+    transition:none;
+}
 
 /* Cart footer */
 .cart-footer {
