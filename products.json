@@ -69,7 +69,7 @@
                 "id": "5"
             },
             "fields": {
-                "title": "John Doe's bad",
+                "title": "John Doe's bed",
                 "price": 808.99,
                 "image": {
                     "fields": {
@@ -85,7 +85,7 @@
                 "id": "6"
             },
             "fields": {
-                "title": "Dr.Dre bad",
+                "title": "Dr.Dre bed",
                 "price": 319.99,
                 "image": {
                     "fields": {
@@ -101,7 +101,7 @@
                 "id": "7"
             },
             "fields": {
-                "title": "Fairy bad",
+                "title": "Fairy bed",
                 "price": 450.99,
                 "image": {
                     "fields": {
@@ -117,7 +117,7 @@
                 "id": "8"
             },
             "fields": {
-                "title": "Ordinary bad",
+                "title": "Ordinary bed",
                 "price": 303.99,
                 "image": {
                     "fields": {
