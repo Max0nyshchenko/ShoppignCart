@@ -22,6 +22,8 @@ const menuOverlay = document.querySelector('.menu-overlay');
 const burger = document.querySelector('.fa-bars');
 const menu = document.querySelector('.menu');
 const menuCloseBtn = document.getElementById('menuCloseBtn');
+const links = document.querySelectorAll('a');
+
 
 // cart
 let cart = [];
@@ -145,6 +147,9 @@ class UI {
         closeCartBtn.addEventListener('click', this.hideCart);
         burger.addEventListener('click', this.showMenu);
         menuCloseBtn.addEventListener('click', this.hideMenu);
+        links.forEach(link => link.addEventListener('click', ()=>{
+            this.hideMenu();
+        }))
     }
     showMenu(){
         menuOverlay.classList.add('transparentBcg');
